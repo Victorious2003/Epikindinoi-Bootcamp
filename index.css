@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #000;
+    background-image: url('background.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(15, 15, 15, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    border: 1px solid #ff4d4d;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.guild-name {
+    color: #ff4d4d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.question p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    transition: 0.2s;
+}
+
+label:hover {
+    color: #ff4d4d;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+.success {
+    background-color: rgba(45, 90, 39, 0.95);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #4caf50;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 0.5s;
+}
+
+.failure {
+    background-color: rgba(90, 39, 39, 0.95);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #f44336;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
